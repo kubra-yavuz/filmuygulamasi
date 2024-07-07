@@ -1,0 +1,31 @@
+.footer{
+    background-color: darkseagreen;
+    margin-top: 73rem;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    color: black;
+    
+}
+
+.footer-title{
+  
+    margin-top: 40px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.title-1{
+    
+    margin-right: 70px;
+    text-decoration: none;
+}
+
+.title-2{
+    
+    margin-left: 70px;
+    text-decoration: none;
+}

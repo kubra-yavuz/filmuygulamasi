@@ -1,0 +1,13 @@
+.nav-link-with-icon {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+  }
+  
+  .nav-link-with-icon svg {
+    margin-right: 5px; 
+    
+  }
+  .me-2{
+    margin-top: 100px;
+  }

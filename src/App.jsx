@@ -1,15 +1,23 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Categories from "./Components/Categories/Categories";
-import MovieCard from "./Components/MovieCard/MovieCard";
+import Movie from "./Components/Movie/Movie";
+import Footer from "./Layouts/Footer/Footer";
+import Navbar from "./Layouts/Navbar/Navbar";
 
 function App() {
-  const [movies, setMovies] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState("28");
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
     <div className="App">
-      Popüler Film Uygulaması
-      <Categories />
-      <MovieCard />
+      <Navbar />
+      <Categories onCategorySelect={handleCategorySelect} />
+      <Movie selectedCategory={selectedCategory} />
+      <Footer />
     </div>
   );
 }
