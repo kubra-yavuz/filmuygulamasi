@@ -1,31 +1,34 @@
-.footer{
-    background-color: darkseagreen;
-    margin-top: 73rem;
-    position: fixed;
+.footer {
     bottom: 0px;
     left: 0px;
     width: 100%;
     height: 150px;
-    padding: 15px;
+    padding: 16px;
     color: black;
-    
+    background: #fff;
+    box-shadow: 0 7px 29px rgba(0, 0, 0, .13);
 }
 
-.footer-title{
-  
-    margin-top: 40px;
-    font-size: 23px;
+.footer-title {
+    margin-top: 42px;
+    font-size: 18px;
     text-align: center;
 }
 
-.title-1{
-    
-    margin-right: 70px;
+.title-1 {
+    margin-right: 72px;
     text-decoration: none;
 }
 
-.title-2{
-    
-    margin-left: 70px;
+.title-2 {
+    margin-left: 72px;
     text-decoration: none;
+}
+.footer {
+    
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
 }

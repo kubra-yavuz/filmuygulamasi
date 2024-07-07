@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./Movie.css";
 
 function Movie({ selectedCategory }) {
   const [movieList, setMovieList] = useState([]);
@@ -17,23 +18,16 @@ function Movie({ selectedCategory }) {
   }, [selectedCategory]);
 
   return (
-    <div>
-      <div style={{ marginLeft: "100px", display: "flex", flexWrap: "wrap" }}>
-        {movieList.map((movie) => (
-          <Link key={movie.id} to={`/movies/${movie.id}`}>
-            <img
-              style={{
-                width: "300px",
-                height: "450px",
-                margin: "10px",
-                cursor: "pointer",
-              }}
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={movie.title}
-            />
-          </Link>
-        ))}
-      </div>
+    <div className="movie-content">
+      {movieList.map((movie) => (
+        <Link key={movie.id} to={`/movies/${movie.id}`}>
+          <img
+            className="movie-poster"
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            alt={movie.title}
+          />
+        </Link>
+      ))}
     </div>
   );
 }

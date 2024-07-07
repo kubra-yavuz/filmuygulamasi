@@ -1,0 +1,52 @@
+.movie-detail-content-img img {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.movie-detail-content h1 {
+    font-size: 40px;
+}
+
+.movie-detail-content p {
+    font-size: 18px;
+}
+
+.movie-detail-page {
+    margin-top: 120px;
+    color: #323232;
+    padding: 12px 24px;
+    background: #fff;
+    box-shadow: 0 7px 29px rgba(0, 0, 0, .13);
+}
+
+.imdb-point {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+}
+
+.movie-detail-page {
+    margin-bottom: 100px;
+}
+
+.movie-button{
+    margin-top: 30px;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(244, 188, 188);
+    
+}
+.movie-button:hover{
+    background-color: brown;
+}
+
+.col-md-9{
+    padding-left: 40px;
+}
+

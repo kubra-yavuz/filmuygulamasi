@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM, { createRoot } from "react-dom/client";
-import "./index.css"; // Buraya Bootstrap CSS dosyasını dahil edin
-import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS dosyasını import edin
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
 import "semantic-ui-css/semantic.min.css";
 import { BrowserRouter } from "react-router-dom";

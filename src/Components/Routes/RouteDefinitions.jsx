@@ -1,16 +1,30 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import Categories from "../Categories/Categories";
 import Movie from "../Movie/Movie";
 import MovieDetail from "../../Pages/MovieDetail/MovieDetail";
 
-function RouteDefinitions() {
+const RouteDefinitions = () => {
+  const [selectedCategory, setSelectedCategory] = useState("28");
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Movie />} />
-        <Route path="/movies/:id" element={<MovieDetail />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Categories onCategorySelect={handleCategorySelect} />
+            <Movie selectedCategory={selectedCategory} />
+          </>
+        }
+      />
+      <Route path="/movies/:id" element={<MovieDetail />} />
+    </Routes>
   );
-}
+};
 
 export default RouteDefinitions;

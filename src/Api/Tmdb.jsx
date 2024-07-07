@@ -1,5 +1,3 @@
-// src/api/tmdb.js
-
 import axios from "axios";
 
 const apiKey = "YOUR_TMDB_API_KEY";

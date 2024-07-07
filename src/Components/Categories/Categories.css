@@ -1,13 +1,25 @@
-.category{
-    margin-top: 20px;
+.category {
     text-align: center;
 }
 
-.btn{
-    font-size: 40px;
-    border:none;
-    margin-bottom: 80px;
-    margin-top: 80px;
-    margin-right: 70px;
+.category .btn {
+    font-size: 24px;
+    border: none;
+    margin: 80px 70px 80px 0;
 }
 
+.category .btn:hover {
+    color: #e39300;
+    background-color: #fff;
+    border-color: #ffc107;
+
+}
+
+.btn-outline-warning:not(:disabled):not(.disabled).active,
+.btn-outline-warning:not(:disabled):not(.disabled):active,
+.show>.btn-outline-warning.dropdown-toggle {
+    color: #c18310;
+    background-color: #fff;
+    border-color: #ffc107;
+    border: none;
+}
